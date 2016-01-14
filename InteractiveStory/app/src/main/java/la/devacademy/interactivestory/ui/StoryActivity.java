@@ -1,4 +1,4 @@
-package la.devacademy.interactivestory;
+package la.devacademy.interactivestory.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import la.devacademy.interactivestory.R;
+import la.devacademy.interactivestory.model.Page;
+
 public class StoryActivity extends AppCompatActivity {
+
+    private Page[] mPages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +26,8 @@ public class StoryActivity extends AppCompatActivity {
         if (name == null) {
             name = "Amigo";
         }
+
+        mPages = new Page[7];
     }
 
 }

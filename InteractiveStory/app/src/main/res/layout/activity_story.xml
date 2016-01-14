@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="la.devacademy.interactivestory.StoryActivity">
+    tools:context=".ui.StoryActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
