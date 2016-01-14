@@ -1,5 +1,6 @@
 package la.devacademy.interactivestory;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -28,8 +29,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String name = mNameField.getText().toString();
+                startStory(name);
             }
         });
+    }
+
+    private void startStory(String name) {
+        Intent intent = new Intent(this, StoryActivity.class);
+        intent.putExtra(getString(R.string.key_name), name);
+        startActivity(intent);
     }
 
 }
